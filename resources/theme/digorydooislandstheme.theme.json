@@ -19,39 +19,11 @@
         "whiteFaintly": "#ffffff1a"
     },
     "remarks": [
-        "editorScheme (top-level) could be set to /theme/path/to/my/editor/scheme.xml",
-        "Some keys may be marked by the IDE in the JSON, but they still work",
-        [
-            "The main window background consists of:",
-            "MainWindow.background: centre",
-            "MainToolbar.background: top",
-            "ToolWindow.Stripe.background: left and right toolbars"
-        ],
-        [
-            "Menus and context menus:",
-            "EditorPopup.selectionBackground: does not seem to work",
-            "MenuBar.selectionBackground: unclear, maybe for Windows menu bar inside window?",
-            "MenuItem.selectionBackground: most popup menus, but not all",
-            "PopupMenu.Selection.innerInsets: top, left, bottom, right of context menu item padding (inside each item)",
-            "PopupMenu.Selection.outerInsets: top, left, bottom, right of context menu item margin (around each item)",
-            "PopupMenu.background: Only visible around dividers",
-            "PopupMenu.borderInsets: top, left, bottom, right of context menu padding (around all items)",
-            "PopupMenuItem.selectionBackground: does not seem to work"
-        ],
-        [
-            "Checkboxes:",
-            "CheckBox.background: background behind text; should be kept transparent",
-            "CheckBox.foreground: the text, not the checkmark"
-        ],
-        "Button.arc: integer value for the rounded corner in px. Unfortunately broken, focus rings don't match",
-        "CheckBox.iconCheckColor: doesn't seem to work",
-        "ComboBox.ArrowButton.background: only for active dropdowns whose text field can be edited",
-        "DefaultTabs.background: Not really visible, overridden by EditorTabs.background, etc.",
-        "TabbedPane.background: Unused???",
-        "TextArea.background: doesn't seen to work",
-        "TextField.background: search field in the Settings dialog",
-        "ToolWindow.Stripe.borderColor: border of left and right toolbars",
-        "Tree.selectionBackground: selected item in the Settings tree view"
+        "Colour keys are not well documented, but you can grab keys from this theme and try them:",
+        "https://github.com/iyashpal/intellij-github-themes/blob/main/resources/theme/dark-default.theme.json",
+        "Don't let the IDE misguide you: Some keys may be marked as unknown, but they may still work!",
+        "Insets are usually specified as top, left, bottom, right",
+        "Button.arc could be used for the rounded corner (28 for fully round), but focus ring doesn't match"
     ],
     "ui": {
         "*": {
@@ -70,15 +42,17 @@
                 "endBackground": "accent",
                 "startBorderColor": "transparent",
                 "endBorderColor": "transparent",
-                "focusColor": "transparent",
-                "focusedBorderColor": "transparent"
+                "focusColor": "accentDimmed",
+                "focusedBorderColor": "transparent",
+                "loadingForeground": "warmGrey33"
             },
             "background": "warmGrey26",
             "startBackground": "warmGrey33",
             "endBackground": "warmGrey33",
             "startBorderColor": "transparent",
             "endBorderColor": "transparent",
-            "focusedBorderColor": "accentDimmed"
+            "focusedBorderColor": "accentDimmed",
+            "loadingForeground": "warmGrey33"
         },
         "CheckBox": {
             "background": "transparent",
